@@ -1,0 +1,122 @@
+.print-advice
+{
+    width: 600px;
+    height: 380px;
+    margin: auto;
+    display: block;
+    position: relative;
+}
+
+.print-advice-part
+{
+    height: 100%;
+    position: relative;
+    width: 560px;
+}
+
+.print-advice-inner
+{
+    width: 90%;
+    height: 100%;
+    background-color: whitesmoke;
+    color : var(--var-app-color);
+    transform: translateY(-12px);
+    left: 25px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    margin-bottom: 40px;
+    box-shadow: rgb(0 0 0 / 80%) 0px 2px 3px 1px, rgb(0 0 0 / 40%) 0px 10px 20px 6px;
+    animation-name: slideDown;
+    animation-duration: 4s;
+}
+
+@keyframes slideDown{
+    from {
+       display: none;
+       height: 0%;
+    }
+    to
+    {
+        display: block;
+        height: 100%;
+    }
+}
+
+.print-advice-part::before
+{
+    content: "";
+    width: 560px;
+    background-image: -webkit-linear-gradient(top, #0c0d0e 0%,#0c0d0e 45%,#2a2826 55%,#1b1a18 100%);
+    box-shadow: rgb(0 0 0 / 50%) 0px 0px 20px 1px, rgb(0 0 0 / 50%) 0px 0px 0px 1px, rgb(0 0 0 / 80%) 0 0 10px 10px inset;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-radius: 5px;
+    height: 28px;
+    display: block;
+    position: relative;
+}
+
+.print-advice-inner::after
+{
+    content: "";
+    width: 560px;
+    height: 25px;
+    background-image: url('../Images/print.png');
+    background-size: cover;
+    position: absolute;
+    z-index: 50;
+}
+
+
+.print
+{
+    padding: 20px;
+    color: var(--var-app-color);
+    font-family: var(--var-font-family-print);
+}
+
+.advice
+{
+    
+    font-size: 25px;
+    overflow: hidden;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.advice::after, .advice::before
+{
+    content: "=====================================";
+    letter-spacing: 0.17em;
+    font-family: "FakeReceipt-Regular",monospace;
+    font-size: 1em;
+    text-align: center;
+    display: inline-block;
+    padding: 20px 0 0 0;
+    color: #121212;
+    margin-top: 20px;
+}
+
+.advice::before
+{
+    margin-bottom: 30px;
+}
+
+.datetime
+{
+    font-family: "FakeReceipt-Regular",monospace;
+    font-size: 20px;
+    display: inline;
+}
+
+.datetime::after
+{
+    content: "=====================================";
+    letter-spacing: 0.17em;
+    font-family: "FakeReceipt-Regular",monospace;
+    font-size: 1em;
+    text-align: center;
+    display: inline-block;
+    color: #121212;
+}
+

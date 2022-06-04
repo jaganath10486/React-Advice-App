@@ -11,7 +11,7 @@ body{
 
 html
 {
-  --var-text-color : #fff;
+  --var-text-color : #121212;
   --var-font-family-print : "FakeReceipt-Regular",monospace;
 
 }
@@ -20,10 +20,11 @@ html
 {
   height: 100vh;
   width: 100%;
-  background-image: url('../Images/bg.jpg');
+  background-image: url('../Images/bg3.webp');
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
