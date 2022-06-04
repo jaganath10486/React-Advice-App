@@ -16,7 +16,7 @@ function Card() {
                 <i class="fa fa-hand-o-down" aria-hidden="true"></i>
                 </div>
                 <div className='button'>
-                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-primary btn-lg">Primary</button>
                 </div>
             </div>
         </div>
