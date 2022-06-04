@@ -18,13 +18,13 @@ html
 
 .App
 {
-  height: 100vh;
+  min-height: 130vh;
+  height: fit-content;
   width: 100%;
   background-image: url('../Images/bg3.webp');
   background-size: cover;
-  background-position: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  display: block;
 }
 

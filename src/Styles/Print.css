@@ -2,9 +2,10 @@
 {
     width: 600px;
     height: 380px;
-    margin: auto;
+    margin: 20px auto;
     display: block;
     position: relative;
+    top: 100px;
 }
 
 .print-advice-part
