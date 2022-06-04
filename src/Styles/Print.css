@@ -24,13 +24,13 @@
     transform: translateY(-12px);
     left: 25px;
     overflow: hidden;
-    display: block;
     position: relative;
     margin-bottom: 40px;
     box-shadow: rgb(0 0 0 / 80%) 0px 2px 3px 1px, rgb(0 0 0 / 40%) 0px 10px 20px 6px;
     animation-name: slideDown;
-    animation-duration: 4s;
+    animation-duration: 3s;
 }
+
 
 @keyframes slideDown{
     from {
